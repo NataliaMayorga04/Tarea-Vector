@@ -58,7 +58,11 @@ public class CourseVector implements CourseCollectionExample {
     }
     @Override
     public Student updateStudent(Student s) {
-        for (int=0, )
+        for (int i =0; i<numRegisteredStudents(); i++){
+            if (s.getId()==students.get(i).getId()){
+                students.get(i).setName(s.getName());
+            }
+        }
         return s;
     }
 
